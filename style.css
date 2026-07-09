@@ -16,8 +16,8 @@
   --line: #e7e3d9;
   --paper: #faf9f6;
 
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
-  --font-body: "Work Sans", "Segoe UI", sans-serif;
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", "Segoe UI", sans-serif;
   --font-mono: "Space Mono", "Courier New", monospace;
 
   --max-width: 1120px;
@@ -556,6 +556,101 @@ footer nav a:hover { color: var(--gold-light); }
 }
 .price-banner .amt { color: var(--gold-light); font-weight: 700; }
 .price-banner .fine { display: block; font-size: 10px; color: rgba(255,255,255,0.55); margin-top: 4px; letter-spacing: 0.02em; }
+
+/* ---------- youtube video grid ---------- */
+
+.yt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.yt-video-wrap {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--black);
+}
+
+.yt-video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 860px) { .yt-grid { grid-template-columns: 1fr; } }
+
+/* ---------- trip photo cards ---------- */
+
+.trip-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.trip-card {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-card-photo {
+  position: relative;
+}
+
+.trip-card-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trip-num-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--black);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trip-card-body {
+  padding: 20px 20px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.trip-card-body .btn { margin-top: auto; padding-top: 16px; }
+
+@media (max-width: 1000px) { .trip-cards-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .trip-cards-grid { grid-template-columns: 1fr; } }
+
+/* ---------- about bio photo ---------- */
+
+.about-photo {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 2px;
+}
+
+@media (max-width: 860px) { .about-photo { height: 320px; } }
 
 /* ---------- contact block ---------- */
 
