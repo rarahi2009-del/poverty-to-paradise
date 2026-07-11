@@ -20,6 +20,9 @@
       <a href="/group-trips">Group Trips</a>
       <a href="/about" class="active">About &amp; Contact</a>
     </nav>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -96,5 +99,24 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.site-header nav');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', function(e){
+    if (nav.classList.contains('open') && !e.target.closest('.site-header')) {
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>
 </body>
 </html>

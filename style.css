@@ -665,3 +665,84 @@ footer nav a:hover { color: var(--gold-light); }
   color: var(--gold-deep);
   min-width: 110px;
 }
+
+/* ============================================
+   MOBILE NAVIGATION — hamburger toggle
+   ============================================ */
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.site-header.on-light .nav-toggle { color: var(--black); }
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  margin: 5px 0;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ============================================
+   MOBILE — max-width 640px
+   ============================================ */
+
+@media (max-width: 640px) {
+
+  .nav-toggle { display: block; }
+
+  .site-header .wrap { position: relative; }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(12,12,12,0.97);
+    padding: 8px 0 16px;
+    z-index: 30;
+  }
+
+  nav.open { display: flex; }
+
+  nav a {
+    padding: 14px 24px;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    border-bottom: none;
+  }
+
+  .wrap { padding: 0 20px; }
+  section { padding: 56px 0; }
+  .hero { padding-top: 100px; padding-bottom: 56px; }
+  .logstrip .wrap { padding: 28px 20px; }
+  .section-head { margin-bottom: 32px; }
+  .form-panel { padding: 24px 20px; }
+  footer { padding: 44px 0 24px; }
+  footer nav { gap: 16px; }
+
+}
+
+/* ============================================
+   MOBILE — max-width 480px
+   ============================================ */
+
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+}
