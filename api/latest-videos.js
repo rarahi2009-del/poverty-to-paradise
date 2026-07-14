@@ -8,7 +8,7 @@
 //  4. Copy the value that looks like: UCxxxxxxxxxxxxxxxxxx
 //  5. Paste it below replacing PASTE_CHANNEL_ID_HERE
 
-const CHANNEL_ID = 'PASTE_CHANNEL_ID_HERE';
+const CHANNEL_ID = 'UCP53BR4kiikf_ZiW1t-U1VQ';
 
 // Fallback videos shown if the RSS feed fails for any reason
 const FALLBACK_IDS = ['DUWYTlxdNMc', 'P7xL4TmrkFI', '4fsnnTHimew'];
