@@ -836,6 +836,54 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
   min-width: 110px;
 }
 
+/* ---------- playlist cards ---------- */
+
+.playlist-category {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 40px 0 14px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.playlist-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 2px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.3;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.playlist-card:hover { background: rgba(255,255,255,0.12); border-color: rgba(221,192,24,0.4); }
+
+.playlist-card .pl-count {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gold);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 860px) { .playlist-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .playlist-grid { grid-template-columns: 1fr; } }
+
 /* ============================================
    MOBILE NAVIGATION
    ============================================ */
