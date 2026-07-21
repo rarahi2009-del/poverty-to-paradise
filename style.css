@@ -1464,36 +1464,7 @@ text-transform: none;
   width: 100%;
 }
 
-.vault-hero {
-    min-height: 260px;
-    margin-top: 63px;
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
 
-.vault-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.45);
-}
-
-.vault-hero .wrap {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-}
-
-.vault-hero h1 {
-    color: #fff !important;
-    font-size: 64px !important;
-    margin: 0 !important;
-    font-family: "DM Serif Display", serif !important;
-    font-weight: 400 !important;
-}
 .vault-banner {
   background-image: url("images/vault.png");
   background-position: center;
