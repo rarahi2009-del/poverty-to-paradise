@@ -1466,7 +1466,7 @@ text-transform: none;
 
 
 .vault-banner {
-  background-image: url("images/vault.png");
+  background-image: url("images/vault.png") !important;
   background-position: center;
 }
 
