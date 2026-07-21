@@ -1421,27 +1421,18 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
   margin-bottom: 8px;
 }
 
-.page-hero .wrap > p:first-of-type {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  margin: 0 0 10px;
-}
-
-.page-hero .wrap > p:nth-of-type(2) {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0 0 18px;
-}
-
-.page-hero .wrap > p:nth-of-type(n+3) {
+.page-hero .wrap > p {
   font-size: 1rem;
   line-height: 1.55;
   margin: 0 0 18px;
 }
 
-.page-hero .wrap > p:nth-of-type(n+3) strong {
-  display: inline-block;
+.page-hero .wrap > p:first-of-type {
+  font-size: 1.15rem;
+}
+
+.page-hero h3 {
   font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 3px;
+  margin: 22px 0 4px;
 }
