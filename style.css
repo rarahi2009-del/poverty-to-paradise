@@ -1488,7 +1488,9 @@ text-transform: none;
 }
 
 .vault-hero h1 {
-    color: white;
-    margin: 0;
-    font-size: 64px;
+    color: #fff !important;
+    font-size: 64px !important;
+    margin: 0 !important;
+    font-family: "DM Serif Display", serif !important;
+    font-weight: 400 !important;
 }
