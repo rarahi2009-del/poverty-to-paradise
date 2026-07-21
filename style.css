@@ -1378,8 +1378,7 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+text-transform: none;
 
 .footer-column a {
   color: #ffffff;
