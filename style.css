@@ -1463,10 +1463,32 @@ text-transform: none;
 .book-hero .hero-content {
   width: 100%;
 }
-.vault-nav a {
+
+.vault-hero {
+    min-height: 260px;
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.vault-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+}
+
+.vault-hero .wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.vault-hero h1 {
     color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    white-space: nowrap;
+    margin: 0;
+    font-size: 64px;
 }
