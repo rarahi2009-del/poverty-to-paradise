@@ -129,7 +129,7 @@ nav a:hover, nav a.active { border-color: var(--gold); color: var(--gold); }
   background-position: center;
 }
 
-.hero.short { min-height: 420px; padding-bottom: 60px; }
+.hero.short { min-height: 180px; padding-bottom: 60px; }
 
 .hero::before {
   content: "";
