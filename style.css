@@ -1465,9 +1465,10 @@ text-transform: none;
 }
 .vault-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    width: 100%;
+    gap: 20px;
     flex-wrap: nowrap;
 }
 
@@ -1475,9 +1476,6 @@ text-transform: none;
     color: white;
     text-decoration: none;
     font-weight: 600;
-    transition: opacity 0.2s ease;
-}
-
-.vault-nav a:hover {
-    opacity: .75;
+    font-size: 18px;
+    white-space: nowrap;
 }
