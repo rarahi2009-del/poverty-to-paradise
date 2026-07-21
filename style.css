@@ -964,7 +964,7 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
 
 .hero-banner {
   position: relative;
-  min-height: 340px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   background-image:
@@ -990,8 +990,8 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
 .hero-banner-content {
   position: relative;
   z-index: 2;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .hero-kicker {
@@ -1008,7 +1008,7 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
   margin: 0;
   color: #ffffff;
   font-family: "DM Serif Display", serif;
-  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
   line-height: 1;
 }
 
