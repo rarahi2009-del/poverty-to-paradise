@@ -1142,3 +1142,26 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
     font-size: 1.4rem;
   }
 }
+
+/* Keep homepage navigation visible on white header */
+
+.site-header {
+  background: #ffffff;
+}
+
+.site-header .brand {
+  color: #0E3A68;
+}
+
+.site-header nav a {
+  color: #0E3A68;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: #DDC018;
+}
+
+.site-header nav a.active::after {
+  background: #DDC018;
+}
