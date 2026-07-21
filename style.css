@@ -1165,3 +1165,172 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
 .site-header nav a.active::after {
   background: #DDC018;
 }
+
+/* ==================================================
+   HOMEPAGE OPTIONS GRID
+   ================================================== */
+
+.home-options {
+  padding: 42px 0 56px;
+  background: #ffffff;
+}
+
+.options-label {
+  margin: 0 0 8px;
+  color: #2A7A3B;
+  font-family: "Space Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-align: center;
+}
+
+.home-options h2 {
+  margin: 0 0 30px;
+  color: #0E3A68;
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  text-align: center;
+}
+
+.home-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.home-option-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #000000;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(14, 58, 104, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.home-option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(14, 58, 104, 0.17);
+}
+
+.home-option-image {
+  width: 100%;
+  height: 215px;
+  display: block;
+  object-fit: cover;
+}
+
+.home-option-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.home-option-content h3 {
+  margin: 0 0 10px;
+  color: #0E3A68;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.home-option-content p {
+  margin: 0 0 22px;
+  color: #333333;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.home-option-link {
+  margin-top: auto;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Individual card colors */
+
+.option-book {
+  border-top: 5px solid #2468B4;
+}
+
+.option-book .home-option-link {
+  color: #2468B4;
+}
+
+.option-group {
+  border-top: 5px solid #2A7A3B;
+}
+
+.option-group .home-option-link {
+  color: #2A7A3B;
+}
+
+.option-vault {
+  border-top: 5px solid #6F2DA8;
+}
+
+.option-vault .home-option-link {
+  color: #6F2DA8;
+}
+
+.option-videos {
+  border-top: 5px solid #D93025;
+}
+
+.option-videos .home-option-link {
+  color: #D93025;
+}
+
+.option-about {
+  border-top: 5px solid #DDC018;
+}
+
+.option-about .home-option-link {
+  color: #A88700;
+}
+
+.option-contact {
+  border-top: 5px solid #0E3A68;
+}
+
+.option-contact .home-option-link {
+  color: #0E3A68;
+}
+
+/* Tablet */
+
+@media (max-width: 950px) {
+  .home-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 620px) {
+  .home-options {
+    padding: 32px 0 42px;
+  }
+
+  .home-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-option-image {
+    height: 200px;
+  }
+
+  .home-option-content {
+    padding: 20px;
+  }
+}
