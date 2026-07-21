@@ -1415,3 +1415,26 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
     gap: 28px;
   }
 }
+
+/* Contact Page */
+.page-hero h1{
+  margin-bottom:12px;
+}
+
+.page-hero p{
+  font-size:1.15rem;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+.page-hero strong{
+  display:block;
+  font-size:1.15rem;
+  margin-bottom:18px;
+}
+
+.page-hero p strong:not(:first-child){
+  font-size:1.35rem;
+  font-weight:700;
+  margin-bottom:6px;
+}
