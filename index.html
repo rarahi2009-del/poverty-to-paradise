@@ -244,20 +244,32 @@
 </footer>
 
 <script>
-// Auto-load latest 3 YouTube videos
+// Load two featured videos and the most recent video
 (function(){
   var grid = document.getElementById('yt-grid');
   if (!grid) return;
+
   fetch('/api/latest-videos')
     .then(function(r){ return r.json(); })
     .then(function(data){
       if (!data.videoIds || !data.videoIds.length) return;
-      grid.innerHTML = data.videoIds.map(function(id, i){
-        return '<div class="yt-video-wrap"><iframe src="https://www.youtube.com/embed/' + id +
-          '" title="Poverty to Paradise — Latest Video ' + (i+1) + '" allowfullscreen></iframe></div>';
-      }).join('');
+
+      var latestVideo = data.videoIds[0];
+
+      grid.innerHTML =
+        '<div class="yt-video-wrap">' +
+          '<iframe src="https://www.youtube.com/embed/P7xL4TmrkFI" title="How It All Started" allowfullscreen></iframe>' +
+        '</div>' +
+
+        '<div class="yt-video-wrap">' +
+          '<iframe src="https://www.youtube.com/embed/Dkv3i4Ch71U" title="Most Watched Video" allowfullscreen></iframe>' +
+        '</div>' +
+
+        '<div class="yt-video-wrap">' +
+          '<iframe src="https://www.youtube.com/embed/' + latestVideo + '" title="Most Recent Video" allowfullscreen></iframe>' +
+        '</div>';
     })
-    .catch(function(){ /* keep hardcoded fallback videos already in the HTML */ });
+    .catch(function(){});
 })();
 
 (function(){
