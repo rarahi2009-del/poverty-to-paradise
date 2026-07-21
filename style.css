@@ -1488,3 +1488,9 @@ text-transform: none;
 .home-options-grid {
     justify-content: center;
 }
+
+.vault-course-card .home-option-image {
+    padding: 16px;
+    box-sizing: border-box;
+    background: white;
+}
