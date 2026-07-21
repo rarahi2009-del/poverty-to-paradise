@@ -1481,6 +1481,7 @@ text-transform: none;
     );
 }
 .vault-course-card .home-option-image {
-  height: auto;
-  object-fit: contain;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
 }
