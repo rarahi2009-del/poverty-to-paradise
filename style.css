@@ -1485,3 +1485,6 @@ text-transform: none;
   object-fit: cover;
   object-position: top;
 }
+.home-options-grid {
+    justify-content: center;
+}
