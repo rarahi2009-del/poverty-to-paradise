@@ -1463,50 +1463,10 @@ text-transform: none;
 .book-hero .hero-content {
   width: 100%;
 }
-.vault-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-    flex-wrap: nowrap;
-}
-
 .vault-nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
     white-space: nowrap;
-}
-.vault-hero {
-  min-height: 190px;
-  margin-top: 63px;
-  padding: 45px 32px;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.vault-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(5, 25, 38, 0.55);
-}
-
-.vault-hero .wrap {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-.vault-hero h1 {
-  margin: 0;
-  color: white;
-  font-family: "DM Serif Display", serif;
-  font-size: 52px;
-  line-height: 1.05;
 }
