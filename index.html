@@ -259,20 +259,26 @@
 
       var latestVideo = data.videoIds[0];
 
-    grid.innerHTML =
-  '<div class="yt-video-wrap">' +
+  grid.innerHTML =
+  '<div class="yt-video-item">' +
     '<h3>How It All Started</h3>' +
-    '<iframe src="https://www.youtube.com/embed/P7xL4TmrkFI" title="How It All Started" allowfullscreen></iframe>' +
+    '<div class="yt-video-wrap">' +
+      '<iframe src="https://www.youtube.com/embed/P7xL4TmrkFI" title="How It All Started" allowfullscreen></iframe>' +
+    '</div>' +
   '</div>' +
 
-  '<div class="yt-video-wrap">' +
+  '<div class="yt-video-item">' +
     '<h3>Most Watched Video</h3>' +
-    '<iframe src="https://www.youtube.com/embed/Dkv3i4Ch71U" title="Most Watched Video" allowfullscreen></iframe>' +
+    '<div class="yt-video-wrap">' +
+      '<iframe src="https://www.youtube.com/embed/Dkv3i4Ch71U" title="Most Watched Video" allowfullscreen></iframe>' +
+    '</div>' +
   '</div>' +
 
-  '<div class="yt-video-wrap">' +
+  '<div class="yt-video-item">' +
     '<h3>Most Recent Video</h3>' +
-    '<iframe src="https://www.youtube.com/embed/' + latestVideo + '" title="Most Recent Video" allowfullscreen></iframe>' +
+    '<div class="yt-video-wrap">' +
+      '<iframe src="https://www.youtube.com/embed/' + latestVideo + '" title="Most Recent Video" allowfullscreen></iframe>' +
+    '</div>' +
   '</div>';
     })
     .catch(function(){});
