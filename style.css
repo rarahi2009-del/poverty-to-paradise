@@ -951,3 +951,194 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
   .vault-grid { grid-template-columns: 1fr; }
   .site-index-grid { grid-template-columns: 1fr; }
 }
+
+/* ==================================================
+   FUNCTION-FIRST HOMEPAGE HERO
+   ================================================== */
+
+.home-hero {
+  background: #ffffff;
+}
+
+/* Short cruise banner */
+
+.hero-banner {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  background-image:
+    url("https://images.unsplash.com/photo-1554254648-2d58a1bc3fd5?q=80&w=2000&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center 58%;
+  overflow: hidden;
+}
+
+.hero-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(14, 58, 104, 0.97) 0%,
+      rgba(14, 58, 104, 0.91) 42%,
+      rgba(42, 122, 59, 0.67) 72%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+}
+
+.hero-banner-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.hero-kicker {
+  margin: 0 0 12px;
+  color: #DDC018;
+  font-family: "Space Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.hero-banner h1 {
+  max-width: 720px;
+  margin: 0;
+  color: #ffffff;
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  line-height: 1;
+}
+
+.hero-description {
+  max-width: 660px;
+  margin: 20px 0 0;
+  color: #ffffff;
+  font-size: 1.12rem;
+  line-height: 1.65;
+}
+
+/* Clear visitor pathways */
+
+.hero-pathways {
+  padding: 38px 0 52px;
+  background: #ffffff;
+  border-bottom: 7px solid #DDC018;
+}
+
+.hero-pathways h2 {
+  margin: 0 0 24px;
+  color: #0E3A68;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.hero-pathway-card {
+  display: flex;
+  gap: 18px;
+  min-height: 185px;
+  padding: 26px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffffff;
+  border: 2px solid #0E3A68;
+  border-top: 7px solid #2A7A3B;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hero-pathway-card:hover {
+  transform: translateY(-4px);
+  border-color: #2A7A3B;
+  box-shadow: 0 12px 28px rgba(14, 58, 104, 0.16);
+}
+
+.pathway-number {
+  color: #DDC018;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hero-pathway-card h3 {
+  margin: 0 0 9px;
+  color: #0E3A68;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.hero-pathway-card p {
+  margin: 0 0 18px;
+  color: #333333;
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.pathway-link {
+  color: #2A7A3B;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Mobile */
+
+@media (max-width: 850px) {
+  .hero-banner {
+    min-height: 310px;
+    background-position: 62% center;
+  }
+
+  .hero-banner-overlay {
+    background: rgba(14, 58, 104, 0.9);
+  }
+
+  .hero-banner-content {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .hero-pathway-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-pathway-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-banner {
+    min-height: 290px;
+  }
+
+  .hero-banner h1 {
+    font-size: 2.45rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-pathways {
+    padding: 30px 0 40px;
+  }
+
+  .hero-pathways h2 {
+    font-size: 1.4rem;
+  }
+}
