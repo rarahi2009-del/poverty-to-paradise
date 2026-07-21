@@ -1464,3 +1464,20 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
 .book-hero .hero-content {
   width: 100%;
 }
+.vault-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: center;
+}
+
+.vault-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.vault-nav a:hover {
+    opacity: .75;
+}
