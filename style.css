@@ -121,7 +121,7 @@ nav a:hover, nav a.active { border-color: var(--gold); color: var(--gold); }
   position: relative;
   min-height: 640px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
   padding-top: 140px;
   padding-bottom: 80px;
