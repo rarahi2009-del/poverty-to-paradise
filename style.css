@@ -1485,10 +1485,6 @@ text-transform: none;
   object-fit: cover;
   object-position: top;
 }
-.vault-course-grid {
-  grid-template-columns: minmax(280px, 420px);
-  justify-content: center;
-}
 
 .vault-course-card .home-option-image {
   width: 100%;
@@ -1496,4 +1492,9 @@ text-transform: none;
   padding: 16px;
   object-fit: contain;
   background: white;
+}
+.vault-course-grid {
+    display: grid;
+    grid-template-columns: 420px;
+    justify-content: center;
 }
