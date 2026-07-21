@@ -1436,3 +1436,18 @@ footer nav a:hover { color: var(--gold); border-color: transparent; }
   font-weight: 700;
   margin: 22px 0 4px;
 }
+.about-hero {
+  min-height: 140px;
+  padding: 0;
+  margin-top: 63px;
+  align-items: center;
+}
+
+.about-hero .hero-content {
+  width: 100%;
+  text-align: center;
+}
+
+.about-hero h1 {
+  margin: 0;
+}
