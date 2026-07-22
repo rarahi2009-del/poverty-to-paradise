@@ -1491,7 +1491,10 @@ text-transform: none;
 }
 
 .vault-course-grid {
-    width: 100%;
-    grid-template-columns: 420px !important;
-    justify-content: center !important;
+    display: flex;
+    justify-content: center;
 }
+   .vault-course-card {
+    width: 420px;
+}
+   
