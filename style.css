@@ -1489,3 +1489,9 @@ text-transform: none;
   object-fit: contain;
   background: white;
 }
+
+.vault-course-grid {
+    width: 100%;
+    grid-template-columns: 420px !important;
+    justify-content: center !important;
+}
