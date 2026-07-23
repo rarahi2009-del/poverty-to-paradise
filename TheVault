@@ -1,1 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poverty to Paradise — Create an Extraordinary Life Without Millions</title>
+<meta name="description" content="Helping ordinary people create extraordinary lives through practical education, travel, and real-world experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="brand">
+      <img src="images/P2Plogo.png" alt="Poverty to Paradise logo" class="brand-logo">
+      Poverty to Paradise
+    </a>
+   <nav>
+  <a href="/" class="active">Home</a>
+  <a href="/book-a-cruise">Book a Cruise</a>
+  <a href="/group-trips">Group Trips</a>
+  <a href="/vault">P2P Vault</a>
+  <a href="/playlists">Video Playlists</a>
+  <a href="/about">About</a>
+</nav>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Homepage Hero -->
+<section class="home-hero">
+
+  <div class="hero-banner">
+    <div class="hero-banner-overlay"></div>
+
+    <div class="wrap hero-banner-content">
+     <!-- <p class="hero-kicker">POVERTY TO PARADISE</p> -->
+
+      <h1>Create an Extraordinary Life Without Millions.</h1>
+
+      <p class="hero-description">
+        Practical education, cruise travel, and real-world resources
+        to help ordinary people create more freedom.
+      </p>
+    </div>
+  </div>
+
+<div class="home-options">
+  <div class="wrap">
+
+  
+    <h2>What would you like to do?</h2>
+
+    <div class="home-options-grid">
+
+      <!-- Book Your Cruise -->
+      <a href="/book-a-cruise" class="home-option-card option-book">
+        <img
+          src="images/book-cruise.png"
+          alt="Large cruise ship sailing in bright blue water"
+          class="home-option-image"
+        >
+        <div class="home-option-content">
+          <h3>Book Your Cruise</h3>
+          <p>  Find the right cruise for your budget, schedule, and travel style.  </p>
+          <span class="home-option-link">Start Booking →</span>
+        </div>
+      </a>
+
+      <!-- Join a Group Cruise -->
+      <a href="/group-trips" class="home-option-card option-group">
+        <img
+          src="images/group-cruise.png"
+          alt="Group of travelers enjoying a cruise together"
+          class="home-option-image"
+        >
+        <div class="home-option-content">
+          <h3>Join a Group Cruise</h3>
+          <p>Travel with Lynnelle and the P2P community on select group cruises.</p>
+          <span class="home-option-link">View Group Cruises →</span>
+        </div>
+      </a>
+
+      <!-- P2P Vault -->
+      <a href="/vault" class="home-option-card option-vault">
+        <img
+          src="images/p2p-vault.png"
+          alt="Treasure chest beside a large vault door"
+          class="home-option-image"
+        >
+        <div class="home-option-content">
+          <h3>Explore the P2P Vault</h3>
+          <p>Access courses, tools, and trusted resources designed to help you build more freedom.</p>
+          <span class="home-option-link">Enter the Vault →</span>
+        </div>
+      </a>
+
+      <!-- Video Playlists -->
+      <a href="/playlists" class="home-option-card option-videos">
+        <img
+          src="images/video-playlists.png"
+          alt="Collection of cruise and travel videos"
+          class="home-option-image"
+        >
+        <div class="home-option-content">
+          <h3>Video Playlists</h3>
+          <p>Find cruise, travel, and lifestyle videos organized by topic.</p>
+          <span class="home-option-link">Browse Playlists →</span>
+        </div>
+      </a>
+
+      <!-- About Lynnelle -->
+      <a href="/about" class="home-option-card option-about">
+        <img
+          src="images/about-lynnelle.jpg"
+          alt="Lynnelle smiling aboard a cruise ship"
+          class="home-option-image"
+        >
+        <div class="home-option-content">
+          <h3>About Lynnelle</h3>
+          <p>Learn how and why I sold everything, left my job, got divorced, and started living full-time on cruise ships.</p>
+          <span class="home-option-link">My Story →</span>
+        </div>
+      </a>
+
+      <!-- Contact -->
+      <a href="/contact" class="home-option-card option-contact">
+        <img
+          src="images/contact.png"
+          alt="Person using a phone surrounded by communication symbols"
+          class="home-option-image"
+        >
+        <div class="home-option-content">
+          <h3>Contact Me</h3>
+          <p>Find the right place for booking questions, business inquiries, and other messages.</p>
+          <span class="home-option-link">Get in Touch →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+        </a>
+
+       
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Stats -->
+
+<!-- Travel Services -->
+
+
+<div class="horizon-divider" data-label="p2p vault"></div>
+
+<!-- P2P Vault -->
+ 
+
+<div class="horizon-divider" data-label="watch on youtube"></div>
+
+<!-- YouTube Videos -->
+<section>
+  <div class="wrap">
+    <div class="section-head" style="text-align:center; max-width:100%;">
+      
+      <h2>Watch how I make it work.</h2>
+    </div>
+    <div class="yt-grid" id="yt-grid">
+      <div class="yt-video-wrap">
+  <h3>How It All Started (1st Video)</h3>
+        <iframe src="https://www.youtube.com/embed/DUWYTlxdNMc" title="Poverty to Paradise — Video 1" allowfullscreen></iframe>
+      </div>
+      <div class="yt-video-wrap">
+          <h3>Most Popular Video</h3>
+        <iframe src="https://www.youtube.com/embed/P7xL4TmrkFI" title="Poverty to Paradise — Video 2" allowfullscreen></iframe>
+      </div>
+      <div class="yt-video-wrap">
+          <h3>Mostr Recent Video</h3>
+        <iframe src="https://www.youtube.com/embed/4fsnnTHimew" title="Poverty to Paradise — Video 3" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="https://www.youtube.com/@PovertyToParadise" class="btn btn-dark" target="_blank" rel="noopener">See All Videos on YouTube →</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="/" class="brand">
+        <img src="images/White-backgroundP2Plogo.png"
+            alt="Poverty to Paradise logo"
+            class="brand-logo"
+          >
+          Poverty to Paradise
+        </a>
+
+        <p>
+          Helping ordinary people create extraordinary lives through practical
+          education, travel, and real-world experience.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Travel</h3>
+        <a href="/book-a-cruise">Book a Cruise</a>
+        <a href="/group-trips">Group Trips</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <a href="/vault">P2P Vault</a>
+        <a href="/playlists">Video Playlists</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <a href="/about">About Lynnelle</a>
+        <a href="/contact">Contact Me</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        Poverty to Paradise is an independent travel advisory. Cruise fares,
+        availability, and final terms are set by the cruise line at the time of booking.
+      </p>
+
+      <p>© 2026 Poverty to Paradise. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+// Load two featured videos and the most recent video
+(function(){
+  var grid = document.getElementById('yt-grid');
+  if (!grid) return;
+
+  fetch('/api/latest-videos')
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (!data.videoIds || !data.videoIds.length) return;
+
+      var latestVideo = data.videoIds[0];
+
+  grid.innerHTML =
+  '<div class="yt-video-item">' +
+    '<h3>How It All Started</h3>' +
+    '<div class="yt-video-wrap">' +
+      '<iframe src="https://www.youtube.com/embed/P7xL4TmrkFI" title="How It All Started" allowfullscreen></iframe>' +
+    '</div>' +
+  '</div>' +
+
+  '<div class="yt-video-item">' +
+    '<h3>Most Watched Video</h3>' +
+    '<div class="yt-video-wrap">' +
+      '<iframe src="https://www.youtube.com/embed/Dkv3i4Ch71U" title="Most Watched Video" allowfullscreen></iframe>' +
+    '</div>' +
+  '</div>' +
+
+  '<div class="yt-video-item">' +
+    '<h3>Most Recent Video</h3>' +
+    '<div class="yt-video-wrap">' +
+      '<iframe src="https://www.youtube.com/embed/' + latestVideo + '" title="Most Recent Video" allowfullscreen></iframe>' +
+    '</div>' +
+  '</div>';
+    })
+    .catch(function(){});
+})();
+
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.site-header nav');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', function(e){
+    if (nav.classList.contains('open') && !e.target.closest('.site-header')) {
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>
+</body>
+</html>
